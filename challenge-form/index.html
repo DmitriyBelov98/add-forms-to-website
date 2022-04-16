@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form challenge</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/" method="GET">
+        <section>
+          <h2>How can we help you ?</h2>
+          <ul>
+            <li>
+              <label for="yourname">Your Name</label>
+              <input type="text" name="your-name" id="yourname" required />
+            </li>
+            <li>
+              <label for="youremail">Your E-Mail Address</label>
+              <input type="email" name="your-email" id="youremail" required/>
+            </li>
+            <li>
+              <label for="yourphone">Your Phone Number</label>
+              <input type="tel" name="your-phone" id="yourphone" required minlength="5"/>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <label for="message">Your Message</label>
+          <textarea name="your-message" id="message" cols="30" rows="10">
+          </textarea>
+        </section>
+        <section>
+          <label for="findplace">How did you find us ? </label>
+          <select name="find-place" id="findplace" required>
+            <option value="WebSearch">Web Search</option>
+            <option value="WebSearch">Web Search</option>
+            <option value="Other">Other</option>
+          </select>
+        </section>
+        <section>
+          <h2>How should we reply ?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input type="radio" name="reply" id="call-me" value="call" required />
+              <label for="call-me">Call me</label>
+            </li>
+            <li class="form-control-inline">
+              <input type="radio" name="reply" id="reply-email" value="email" required />
+              <label for="reply-email">Send me an email</label>
+            </li>
+            <li class="form-control-inline">
+              <input type="radio" name="reply" id="refuse" value="refuse" required />
+              <label for="refuse">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <div class="form-control-inline">
+            <input type="checkbox" name="terms" id="terms" required />
+            <label for="terms">Accept Terms</label>
+          </div>
+        </section>
+        <section>
+          <div class="button-flex">
+            <button type="reset" class="reset">Clear</button>
+            <button type="submit" class="submit">Submit</button>
+          </div>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

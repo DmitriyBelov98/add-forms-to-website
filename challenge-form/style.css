@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: rgb(215, 255, 255);
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+}
+form {
+    width: 40rem;
+    margin: 3rem auto;
+    background-color: rgb(222, 216, 252);
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0, 0.2);
+}
+section {
+    margin-bottom: 1rem;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    
+}
+textarea {
+    resize: none;
+}
+input,
+textarea,
+select {
+    font: inherit;
+    width: 100%;
+    display: block;
+    
+    border: 1px solid rgb(104, 103, 103);
+    padding: 0.5rem;
+    color: rgb(70, 68, 68);
+    border-radius: 3px;
+}
+input:focus,
+textarea:focus {
+    background-color: rgb(234, 240, 253);
+}
+
+.form-control-inline {
+    display: flex;
+}
+.form-control-inline input {
+    width: auto;
+    margin-right: 0.5rem;
+}
+.form-control-inline label {
+    margin: 0;
+}
+.button-flex {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+button {
+    display: block;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  
+    border: 1px solid rgb(195, 184, 250);
+}
+.submit {
+    
+    margin-left: 0.5rem;
+    background-color: rgb(78, 67, 221);
+    color: rgb(233, 232, 250);
+}
+.reset {
+    background-color: rgb(233, 232, 250);
+    color: rgb(78, 67, 221);
+}
+.submit:hover {
+    background-color: rgb(101, 93, 216);
+}
+
+.reset:hover {
+    background-color: rgb(190, 188, 236);
+}
